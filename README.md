@@ -1,10 +1,8 @@
 # Sebastian Świderski - Web - Wrocław
 
-## 🛒 Ocado Technology - Web Internship Task
+## Ocado Technology - Web Internship Task
 
-## 🔗 Live Demo:
-
-[Zobacz demo](https://xeo3221.github.io/Sebastian_Swiderski_Web_Wroclaw/)
+## [🔗 Live Demo](https://xeo3221.github.io/Sebastian_Swiderski_Web_Wroclaw/)
 
 Prosta aplikacja sklepu internetowego zbudowana w React i TypeScript, demonstrująca podstawowe funkcjonalności e-commerce.
 

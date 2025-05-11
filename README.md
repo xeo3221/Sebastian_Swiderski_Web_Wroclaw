@@ -60,6 +60,10 @@ src/
    - Dostępność (aria-labels)
 
 ## 🎨 Design
+![Screenshot 2025-05-11 at 18 31 27](https://github.com/user-attachments/assets/18af5fc3-9ced-4451-af52-c4b36469064e)
+![Screenshot 2025-05-11 at 18 31 12](https://github.com/user-attachments/assets/24d5c015-f40d-45ae-8d87-dde9c6fc0fed)
+![Screenshot 2025-05-11 at 18 31 48](https://github.com/user-attachments/assets/f8a744e8-1984-4815-873a-f1924e8b8311)
+![Screenshot 2025-05-11 at 18 32 03](https://github.com/user-attachments/assets/42f2353a-183e-486b-a2c9-20bd7c182235)
 
 ## Instalacja i uruchomienie
 

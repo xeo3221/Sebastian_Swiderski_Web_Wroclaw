@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { Product } from "../types/product";
 import { useCart } from "../hooks/useCart";
 
+const BASE_URL = "https://xeo3221.github.io/Sebastian_Swiderski_Web_Wroclaw";
+
 interface CartItem extends Product {
   quantity: number;
 }
@@ -14,10 +16,12 @@ const ProductDetails = () => {
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch("/api/products.json")
+    fetch(`${BASE_URL}/api/products.json`)
       .then((res) => res.json())
       .then((data) => {
-        const foundProduct = data.find((p: Product) => p.id === Number(id));
+        const foundProduct = data.products.find(
+          (p: Product) => p.id === Number(id)
+        );
         setProduct(foundProduct);
         setLoading(false);
       })

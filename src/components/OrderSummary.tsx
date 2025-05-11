@@ -13,7 +13,8 @@ const OrderSummary = () => {
 
   const handlePlaceOrder = () => {
     placeOrder();
-    window.location.href = "/order-confirmation.html";
+    window.location.href =
+      "/Sebastian_Swiderski_Web_Wroclaw/order-confirmation.html";
   };
 
   if (items.length === 0) {
@@ -41,46 +42,37 @@ const OrderSummary = () => {
         {items.map((item) => (
           <div
             key={item.id}
-            className="flex items-center p-6 border-b border-gray-200 last:border-b-0"
+            className="p-6 border-b border-gray-200 last:border-b-0"
           >
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold text-gray-800">
-                {item.name}
-              </h3>
-              <p className="text-gray-600 mt-1">Ilość: {item.quantity}</p>
-              <p className="text-gray-600">
-                Cena: {formatPrice(item.price)} zł
-              </p>
-              <p className="text-gray-800 font-medium">
-                Suma częściowa: {calculateItemTotal(item.price, item.quantity)}{" "}
-                zł
+            <div className="flex justify-between items-center">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {item.name}
+                </h3>
+                <p className="text-gray-600">
+                  {formatPrice(item.price)} zł x {item.quantity}
+                </p>
+              </div>
+              <p className="text-lg font-semibold text-gray-900">
+                {calculateItemTotal(item.price, item.quantity)} zł
               </p>
             </div>
           </div>
         ))}
         <div className="p-6 bg-gray-50">
-          <div className="flex justify-between items-center">
-            <span className="text-lg font-semibold text-gray-800">
-              Suma całkowita:
-            </span>
+          <div className="flex justify-between items-center mb-6">
+            <span className="text-lg font-semibold text-gray-800">Suma:</span>
             <span className="text-2xl font-bold text-gray-900">
               {total.toFixed(2)} zł
             </span>
           </div>
-          <div className="mt-6 space-y-4">
-            <button
-              onClick={handlePlaceOrder}
-              className="w-full px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
-            >
-              Złóż zamówienie
-            </button>
-            <Link
-              to="/cart"
-              className="block w-full text-center px-6 py-3 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors"
-            >
-              Wróć do koszyka
-            </Link>
-          </div>
+
+          <button
+            onClick={handlePlaceOrder}
+            className="w-full px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Złóż zamówienie
+          </button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
 
 ## 🔗 Live Demo:
 
-[Zobacz demo](https://sebastianswiderski.github.io/Sebastian_Swiderski_Web_Wroclaw/)
+[Zobacz demo](https://xeo3221.github.io/Sebastian_Swiderski_Web_Wroclaw/)
 
 Prosta aplikacja sklepu internetowego zbudowana w React i TypeScript, demonstrująca podstawowe funkcjonalności e-commerce.
 
@@ -66,7 +66,7 @@ src/
 1. Sklonuj repozytorium:
 
 ```bash
-git clone https://github.com/sebastianswiderski/Sebastian_Swiderski_Web_Wroclaw.git
+git clone https://github.com/xeo3221/Sebastian_Swiderski_Web_Wroclaw.git
 cd Sebastian_Swiderski_Web_Wroclaw
 ```
 
